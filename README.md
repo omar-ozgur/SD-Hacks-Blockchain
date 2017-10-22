@@ -1,3 +1,5 @@
+![](https://image.ibb.co/iOJkFm/image.png)
+
 # HackChain
 A hackathon challenge platform using the Ethereum blockchain
 
@@ -12,6 +14,3 @@ I used Solidity to create the smart contract, and I used libraries such as IPFS.
 
 ## Challenges I ran into
 Since this was my first time interacting with blockchain technology, everything was very new to me. I had to learn about what "smart contracts" were, and then figure out how to create one using the Solidity language. It was also very difficult for me to figure out how to make the data as useful as possible through the addition of a front-end web portal.
-
-## Accomplishments that I'm proud of
-I am proud that I was able to learn a completely new technology in the span of the weekend. I look forward to learning a lot more about blockchain technology!
