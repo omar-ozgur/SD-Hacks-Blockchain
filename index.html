@@ -213,7 +213,7 @@
         }
 
         function closeCategory(category, winner) {
-            window.contractInstance.closeCategoryAutomatic(category, window.sendDataObject, function(err, result){
+            window.contractInstance.closeCategoryManual(category, winner, window.sendDataObject, function(err, result){
                 if (err) {
                     console.error('Error sending data: ', err);
                 } else {
