@@ -2,6 +2,7 @@
 <head>
     <title>Hackathon Competition</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <script src="js/web3.min.js"></script>
     <script src="js/ipfs.js"></script>
     <script src="js/jquery.min.js"></script>
@@ -100,7 +101,7 @@
         }
 
         function createCategory(description, reward, bond, timeLimit) {
-            window.contractInstance.deposit({from: account, value: window.web3.toWei(reward, 'ether')}, function(err, result){
+            window.contractInstance.deposit({from: account, value: reward}, function(err, result){
                 if (err) {
                     console.error('Error sending data: ', err);
                 }
@@ -185,6 +186,12 @@
         }
 
         function createSubmission(category, file) {
+            var categoryBond = window.contractInstance.getCategoryBond.call(category, window.sendDataObject)['c'][0];
+            window.contractInstance.deposit({from: account, value: categoryBond}, function(err, result){
+                    if (err) {
+                        console.error('Error sending data: ', err);
+                    }
+            });
             window.ipfs.add(file, function(err, result) {
                 if (err) {
                     console.error('Error sending file: ', err);
@@ -325,7 +332,7 @@
         <tr>
             <th>ID</th>
             <th>Category ID</th>
-            <th>File</th> 
+            <th>File</th>
         </tr>
     </table>
     <form id="add-category" class="well" onsubmit="return false;">

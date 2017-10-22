@@ -29,6 +29,14 @@ body {
     background-color: #ffffff;
 }
 
+#submissions tr:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+#submissions tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
 .header {
   padding: 30px;
   text-align: center;
