@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'nexa';
+  src: url('../fonts/NexaLight.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'nexaBold';
+  src: url('../fonts/NexaBold.otf') format("opentype");
+}
+
+body {
+  font-family: 'nexaBold', serif;
+  margin: 0px;
+}
+
+#categories {
+  width: 100%;
+}
+
+#submissions {
+  width: 100%;
+}
+
+#categories tr:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+#categories tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background-color: #4d74c3;
+  color: #ffffff;
+}
+
+#add-category {
+  color: #ffffff;
+  background-color: #4ad6a7;
+  margin: 2%;
+  width: 19%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 2.5%;
+  float: left;
+  height: 300px;
+}
+
+.category-input {
+  margin: 2px;
+  border: none;
+  padding: 5px;
+}
+
+#add-submission {
+  color: #ffffff;
+  background-color: #4aa6d6;
+  margin: 2%;
+  width: 19%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 2.5%;
+  float: left;
+  height: 300px;
+}
+
+.submission-input {
+  margin: 2px;
+  border: none;
+  padding: 5px;
+}
+
+#pick-winner {
+  color: #ffffff;
+  background-color: #ea9537;
+  margin: 2%;
+  width: 19%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 2.5%;
+  float: left;
+  height: 300px;
+}
+
+.winner-input {
+  margin: 2px;
+  border: none;
+  padding: 5px;
+}
+
+#check-balance {
+  color: #ffffff;
+  background-color: #b73bdb;
+  margin: 2%;
+  width: 19%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 2.5%;
+  float: left;
+  height: 300px;
+}
+
+.balance-input {
+  margin: 2px;
+  border: none;
+  padding: 5px;
+}
