@@ -18,6 +18,7 @@ contract Hackathon {
     string contributorReferences;
     address creator;
   }
+  
   mapping(address => uint256) public Balances;
   mapping(uint => category) Categories;
   mapping(uint => submission) Submissions;
