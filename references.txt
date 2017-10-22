@@ -1,0 +1,11 @@
+Here are a few resources that I used to get started:
+
+https://dappsforbeginners.wordpress.com/tutorials/interactions-between-contracts/
+
+https://ipfs.io/docs/getting-started/
+
+https://github.com/ipfs/js-ipfs
+
+https://github.com/claudiobizzotto/ethereum-ipfs
+
+https://solidity.readthedocs.io/en/latest/installing-solidity.html#building-from-source
